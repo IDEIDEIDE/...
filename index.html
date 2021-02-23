@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>FAMILY BOOK</h1>
+        <img  id = "pic" src = "https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg">
+        <p id = "name">YAY!</p>
+        <button onclick = "next()">NEXT</button>
+        <script>
+            var imgs = ["https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png", "https://qph.fs.quoracdn.net/main-qimg-d3675b3e8d185154b151935688388afc.webp",]
+            var names = ["joe", "mama", "flamingo"]
+            var i = -1
+            function next(){
+                i = i + 1
+                document.getElementById("name").innerHTML = names[i]
+                document.getElementById("pic").src = imgs[i]
+                
+            }
+        </script>
+    </body>
+</html>
